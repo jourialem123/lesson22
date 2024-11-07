@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity3</title>
+</head>
+<body>
+    <h2>Arguements functions in JS</h2>
+    <p id="p1"></p>
+    <script>
+        var i=0;
+        var max=0;
+        function findmax(){
+            for(i=0;i<arguments.length;i++){
+                if(arguments[i]>max){
+                    max=arguments[i];
+                }
+            }
+            return max
+        }
+        document.getElementById("p1").innerHTML=findmax(20,50,100,80,10,30);
+    </script>
+</body>
+</html>
